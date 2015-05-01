@@ -2,9 +2,11 @@
   "targets": [
     {
       "target_name": "fibonacci",
-      "sources": [ "fibonacci.cc" ],
+      "sources": [
+        "lib/*.cc"
+      ],
       "include_dirs": [
-        "<!(node -e \"require('nan')\")",
+        "<!(node -e \"require('nan')\")"
       ]
     }
   ]

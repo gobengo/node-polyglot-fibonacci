@@ -1,7 +1,7 @@
 {
   "name": "fibonacci-cc",
   "version": "1.0.0",
-  "description": "My Awesome Addon",
+  "description": "A fibonacci implementation written in C++",
   "main": "index.js",
   "gypfile": true,
   "scripts": {
