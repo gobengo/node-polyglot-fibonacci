@@ -1,11 +1,12 @@
 var implPath = require('path').resolve(
-  process.env.FIBONACCI_IMPL || './lib/fibonacci-cc'
+  process.env.fibonacci_impl || './lib/fibonacci-cc'
 )
 
-module.exports = require(implPath);
+module.exports = exports = require(implPath);
 
 if (require.main === module) {
   var n = process.argv[2];
+  var method = process.argv[3] || 'recursive';
   if ( ! n) {
     console.error('Please pass an argument');
     process.exit(1);
@@ -17,5 +18,5 @@ if (require.main === module) {
     console.error('Please pass an integer argument');
     process.exit(1);
   }
-  console.log(module.exports(n));
+  process.stdout.write(exports[method](n).toString())
 }

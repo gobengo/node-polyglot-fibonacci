@@ -1,7 +1,7 @@
 {
-  "name": "fibonacci-cc",
+  "name": "polyglot-fibonacci",
   "version": "1.0.0",
-  "description": "A fibonacci implementation written in C++",
+  "description": "bindings to fibonacci implementations in non-JavaScript languages (defaults to C++)",
   "main": "index.js",
   "gypfile": true,
   "scripts": {
