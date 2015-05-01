@@ -1,5 +1,5 @@
 var implPath = require('path').resolve(
-  process.env.fibonacci_impl || './lib/fibonacci-cc'
+  process.env.fibonacci_impl || __dirname+'/lib/fibonacci-cc'
 )
 
 module.exports = exports = require(implPath);
